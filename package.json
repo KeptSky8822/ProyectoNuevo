@@ -1,26 +1,29 @@
 {
   "name": "proyectonuevo",
   "version": "1.0.0",
-  "description": "## Información del Alumno - Nombre y Apellido: Julian Appiolaza - Curso: 5to Año - Especialidad: Informática",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KeptSky8822/ProyectoNuevo.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/KeptSky8822/ProyectoNuevo/issues"
   },
   "homepage": "https://github.com/KeptSky8822/ProyectoNuevo#readme",
+  "description": "",
   "dependencies": {
     "express": "^5.1.0",
+    "express-validator": "^7.2.1",
     "sequelize": "^6.37.7",
-    "sqlite": "^5.1.1",
     "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
