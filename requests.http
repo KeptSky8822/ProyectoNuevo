@@ -1,13 +1,13 @@
 ### Listar todos los libros
-GET http://localhost:3000/libros
+GET http://localhost:5000/libros
 Accept: application/json
 
 ### Obtener un libro específico
-GET http://localhost:3000/libros/buscar/2
+GET http://localhost:5000/libros/buscar/2
 Accept: application/json
 
 ### Crear un nuevo libro (válido)
-POST http://localhost:3000/libros
+POST http://localhost:5000/libros
 Content-Type: application/json
 Accept: application/json
 
@@ -21,7 +21,7 @@ Accept: application/json
 }
 
 ### Crear un libro (inválido: autor con número, isbn con letras, estado incorrecto, categoría incorrecta, fecha inválida)
-POST http://localhost:3000/libros
+POST http://localhost:5000/libros
 Content-Type: application/json
 Accept: application/json
 
@@ -35,7 +35,7 @@ Accept: application/json
 }
 
 ### Actualizar un libro (válido)
-PUT http://localhost:3000/libros/buscar/2
+PUT http://localhost:5000/libros/buscar/2
 Content-Type: application/json
 Accept: application/json
 
@@ -49,21 +49,21 @@ Accept: application/json
 }
 
 ### Eliminar un libro por id
-DELETE http://localhost:3000/libros/buscar/2
+DELETE http://localhost:5000/libros/buscar/2
 Accept: application/json
 
 ### Buscar libros por título, autor o categoría
-GET http://localhost:3000/libros/buscar?titulo=Cien&autor=Gabriel&categoria=novela
+GET http://localhost:5000/libros/buscar?titulo=Cien&autor=Gabriel&categoria=novela
 Accept: application/json
 
 ### Listar todos los libros (Primera página)
-GET http://localhost:3000/libros?limit=3&offset=0
+GET http://localhost:5000/libros?limit=3&offset=0
 Accept: application/json
 
 ### Listar todos los libros (Segunda página)
-GET http://localhost:3000/libros?limit=3&offset=3
+GET http://localhost:5000/libros?limit=3&offset=3
 Accept: application/json
 
 ### Listar todos los libros (Tercera página)
-GET http://localhost:3000/libros?limit=3&offset=6
+GET http://localhost:5000/libros?limit=3&offset=6
 Accept: application/json

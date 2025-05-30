@@ -1,6 +1,8 @@
 import { Sequelize, DataTypes } from 'sequelize';
 import express from 'express';
 import { body, validationResult } from 'express-validator';
+import cors from 'cors';
+
 
 // Documentación de los endpoints
 // GET /libros - Listar todos los libros
@@ -74,9 +76,10 @@ async function syncModels() {
 syncModels();
 
 const app = express();
-const PORT = 3000;
+const PORT = 5000;
 
 app.use(express.json()); // Middleware para parsear JSON
+app.use(cors()); // Habilita CORS para todas las rutas
 
 // Listar todos los libros ordenados alfabéticamente por título con paginación
 app.get('/libros', async (req, res) => {
